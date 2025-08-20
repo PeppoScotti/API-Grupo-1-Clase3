@@ -2,9 +2,9 @@ async function fetchUsers() {
     try {
         const response = await fetch('https://jsonplaceholder.typicode.com/users');
         const users = await response.json();
-        displayUsers(users);
+        displayUsers(users); // llama a la función para mostrar los usuarios
     } catch (error) {
-        console.error('Error fetching users:', error);
+        console.error('Error buscando usuarios:', error);
     }
 }
 
